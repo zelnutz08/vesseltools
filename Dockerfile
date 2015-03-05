@@ -1,2 +1,2 @@
-FROM zelnutz08/vesseltools
-RUN echo 'Robin'
+# Print "Hello docker!"
+RUN echo "Hello docker!"
