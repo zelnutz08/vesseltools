@@ -23,8 +23,3 @@ EXPOSE 80
 #RUN service apache2 start
 RUN echo 'service apache2 start ' > /etc/bash.bashrc
 
-#CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
-#CMD service apache2 start
-
-# Set default container command
-#ENTRYPOINT /bin/bash
