@@ -12,5 +12,6 @@ MAINTAINER zelnutz08
 
 RUN apt-get install apache2 -y
 #RUN service apache2 start
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 RUN echo 'service apache2 start ' > /etc/bash.bashrc
 
