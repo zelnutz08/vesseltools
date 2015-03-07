@@ -11,15 +11,6 @@ FROM ubuntu
 MAINTAINER zelnutz08
 
 RUN apt-get install apache2 -y
-
-# Copy the configuration files from host 
-ADD apache2files/apache2.conf /etc/apache2/apache2.conf
-ADD apache2files/ports.conf /etc/apache2/ports.conf
-
-
-# Expose the default port
-EXPOSE 80
-
 #RUN service apache2 start
 RUN echo 'service apache2 start ' > /etc/bash.bashrc
 
